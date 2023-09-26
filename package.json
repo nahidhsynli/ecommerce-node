@@ -1,0 +1,22 @@
+{
+  "name": "ecommerse-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahidhsynli/ecommerce-node.git"
+  },
+  "keywords": [
+    "ecommerse"
+  ],
+  "author": "nahidhsynli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahidhsynli/ecommerce-node/issues"
+  },
+  "homepage": "https://github.com/nahidhsynli/ecommerce-node#readme"
+}
