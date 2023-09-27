@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/nahidhsynli/ecommerce-node/issues"
   },
-  "homepage": "https://github.com/nahidhsynli/ecommerce-node#readme"
+  "homepage": "https://github.com/nahidhsynli/ecommerce-node#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
 }

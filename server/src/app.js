@@ -1,4 +1,5 @@
 const express = require("express");
+const APP_ROUTER = require("./routes");
 
 const sequelize = require("./database/index");
 const User = require("./models/user");
@@ -16,9 +17,8 @@ sequelize.sync();
 const app = express();
 
 app.use(express.urlencoded({ extended: "true" }));
+app.use(express.json());
 
-app.get("/", function (req, res) {
-  res.send("OK!");
-});
+app.use(APP_ROUTER);
 
 module.exports = app;
