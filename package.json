@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/nahidhsynli/ecommerce-node#readme",
   "dependencies": {
-    "bcrypt": "^5.1.1"
+    "bcrypt": "^5.1.1",
+    "nodemailer": "^6.9.5"
   }
 }

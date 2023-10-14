@@ -1,4 +1,6 @@
 const bcrypt = require("bcrypt");
+const fs = require("fs")
+const EmailService = require("../services/email");
 const User = require("../models/user");
 
 const SALT_ROUNDS = 10;
@@ -22,6 +24,14 @@ async function registration(req, res) {
     email,
     password: hashedPassword,
   });
+
+  EmailService.sendMail({
+    from: "From Nahid Huseynli",
+    to: email,
+    subject:"confirm your email",
+    html
+  });
+
   return res.status(201).send({
     error: null,
     user,
